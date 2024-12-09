@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.signup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.signup-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.signup-form h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.signup-form input,
+.signup-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.signup-form button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: #45a049;
+}
+
+.switch-page {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.switch-page a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.switch-page a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 767px) {
+    .signup-form {
+        padding: 15px;
+    }
+
+    .signup-form h2 {
+        font-size: 20px;
+    }
+
+    .signup-form input,
+    .signup-form button {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .switch-page {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .signup-form {
+        padding: 20px;
+    }
+
+    .signup-form h2 {
+        font-size: 24px;
+    }
+
+    .signup-form input,
+    .signup-form button {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .switch-page {
+        font-size: 14px;
+    }
+}

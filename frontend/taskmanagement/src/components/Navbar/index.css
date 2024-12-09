@@ -1,0 +1,89 @@
+* {
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2c3e50; 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); 
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.app-name {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 18px;
+    color: #ecf0f1; 
+    background-color: #34495e;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.app-name:hover {
+    background-color: #1abc9c; 
+}
+
+.logo-link-item {
+    text-decoration: none;
+}
+
+.logout-btn {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 75px;
+    height: 35px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+
+.logout-btn {
+    background: linear-gradient(135deg, #e74c3c, #c0392b); 
+    color: white;
+}
+
+.logout-btn:hover {
+    background: linear-gradient(135deg, #c0392b, #e74c3c); 
+    transform: translateY(-3px); 
+}
+
+.logout-btn:active {
+    transform: translateY(0); 
+}
+
+@media (max-width: 767px) {
+    .app-name {
+        font-size: 14px; 
+    }
+    .nav-container {
+        padding: 10px;
+    }
+
+    .logout-btn{
+        width: 58px;
+    }
+}
+
+@media(min-width: 768px){
+    .nav-container {
+       padding: 10px; 
+       height: 55px;
+    }
+
+    .app-name {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
